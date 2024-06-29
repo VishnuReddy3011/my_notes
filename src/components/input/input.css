@@ -1,0 +1,81 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: center;
+        gap: 5px;
+
+        input[type=text] {
+            height: 30px;
+            width: max-content;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #555;
+
+            &:focus {
+                border-top: 1px solid rgb(11, 157, 187);
+                border-left: 1px solid rgb(11, 157, 187);
+                border-right: 1px solid rgb(50, 170, 29);
+                border-bottom: 1px solid rgb(50, 170, 29);
+            }
+        }
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: center;
+        gap: 5px;
+
+        textarea {
+            resize: none;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #555;
+            padding: 10px;
+
+            &:focus {
+                border-top: 1px solid rgb(11, 157, 187);
+                border-left: 1px solid rgb(11, 157, 187);
+                border-right: 1px solid rgb(50, 170, 29);
+                border-bottom: 1px solid rgb(50, 170, 29);
+            }
+        }
+    }
+
+    .btn {
+        input[type=button] {
+            padding: 2px 5px;
+            background-color: white;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #555;
+
+            &:hover {
+                background-color: #acacac;
+                /* color: white; */
+            }
+
+            &:active {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        /* input[type=button].active {
+            background-color: #555;
+            color: white;
+        } */
+    }
+}

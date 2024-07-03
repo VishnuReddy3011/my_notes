@@ -1,0 +1,41 @@
+.form {
+    height: 100vh;
+    /* background-color: teal; */
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .user-name,
+    .pass-word {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            padding: 5px;
+        }
+    }
+
+    .btn {
+
+        /* background-color: teal; */
+        span {
+            font-size: 14px;
+        }
+
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 30px;
+
+        button {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
